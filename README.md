@@ -3,7 +3,7 @@ A USB key based on a Teensy 2, a SD adaptor and an ESP8266. Aim is to leak files
 
 # Installation
 
-On Arduino: solder an SD Adaptor (https://www.pjrc.com/teensy/sd_adaptor.html) on Teensy 2 or Teensy++2 (https://www.pjrc.com/teensy/). Then solder an ESP8266.
+On Arduino: solder an SD Adaptor (https://www.pjrc.com/teensy/sd_adaptor.html) on Teensy 2 or Teensy++2 (https://www.pjrc.com/teensy/). Then solder an ESP8266 (https://github.com/OpenDevice/ESP8266AT).
 On Arduino computer: install Teensyduino (https://www.pjrc.com/teensy/teensyduino.html) and ESP8266AT.
 On CNC Server: install PHP, put upload.php file on server with an uploads directory in the same folder.
 
