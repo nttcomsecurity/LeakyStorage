@@ -49,7 +49,7 @@ void readFiles() {
   SdFile file;
   File myFile;
   String myFileContent;
-  char aChar;
+  unsigned char aChar;
   char EntryName[15];
   
   if (!sd.begin(SD_CS_PIN)) {
@@ -73,8 +73,11 @@ void readFiles() {
         Serial.println(EntryName);
         // read from the file until there's nothing else in it:
         while (myFile.available()) {
+          char buff[3];
+          
           aChar = myFile.read();
-          myFileContent += String(aChar);
+          snprintf(buff, 3, "%02X", aChar);
+          myFileContent += String(buff);
           //Serial.write(myFile.read());
         }
         myFile.close();
